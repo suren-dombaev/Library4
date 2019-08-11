@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Employee Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1  >
+    Employee Page
+</h1>
+<div>
+    <input type="text" placeholder="Search by Content" id="searchByContent">
+    <button onclick="searchbyText()">Search</button>
+</div>
+<div>
+    <input type="text" placeholder="Search Author's Books" id="AuthorReport">
+    <button onclick="authorReport()">Search</button>
+</div>
+<div>
+    <input type="text" placeholder="Write book title " id="booktitle">
+    <button onclick="TakeBook()"> Take a Book</button>
+</div>
+<div>
+    <input type="text" placeholder="Add Book " id="newbook">
+    <button onclick="addBook()"> Add Book </button>
+</div>
+<div class='userAdd'>
+    <h3>Add user</h3>
+    <table>
+        <tr>
+            <th class="left"><label>Human:</label></th>
+            <th><input type="text" placeholder="Human " id="human" /></th>
+        </tr>
+        <tr>
+            <th class="left"><label>User Name:</label></th>
+            <th><input type="text" placeholder="Username " id="username" /></th>
+        </tr>
+        <tr>
+            <th class="left"><label>Password:</label></th>
+            <th><input type="text" placeholder="Password " id="password" /></th>
+        </tr>
+        <tr>
+            <th class="left"><label>Role:</label></th>
+            <th><input type="text" placeholder="Role " id="role" /></th>
+        </tr>
+    </table>
+</div>
+<div>
+    <button onclick="addUser()"> Add User </button></div>
+
+</div>
+
+<div>
+    <h3>Remove User</h3>
+    <input type="text" placeholder="User Name" id="removingUN">
+    <select id="removingRole">Choose<option hidden disabled selected value> -- select role -- </option>
+        <option value="faculty">Faculty</option>
+        <option value="students">Student</option>
+        <option value="employees">Employee</option>
+    </select>
+    <div>
+        <button onclick="removeUser()"> Remove User </button>
+    </div>
+</div>
+</body>
+
+
+
+<script src="login.js"></script>
+<script src="Human.js"></script>
+<script src="Book.js"></script>
+<script src="Library.js"></script>
+
+
+
+
+
+</body>
+
+</html>
